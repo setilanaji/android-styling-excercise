@@ -45,7 +45,7 @@ class DetailProductActivity : AppCompatActivity() {
         binding.run {
             tvDetailProductTitle.text = title
             tvDetailProductCategory.text = category
-            tvDetailProductPrice.text = price
+            tvDetailProductPrice.text = "$ $price"
             tvDetailProductDesc.text = des
             Glide.with(this@DetailProductActivity).load(imgUrl).override(
                 Target.SIZE_ORIGINAL,
