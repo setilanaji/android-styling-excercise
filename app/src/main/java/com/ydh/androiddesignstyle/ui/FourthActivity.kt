@@ -1,15 +1,25 @@
 package com.ydh.androiddesignstyle.ui
 
-import androidx.appcompat.app.AppCompatActivity
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.Window
+import android.view.WindowManager
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.ydh.androiddesignstyle.ui.adapter.ProductAdapter
+import com.ydh.androiddesignstyle.R
 import com.ydh.androiddesignstyle.databinding.ActivityFourthBinding
 import com.ydh.androiddesignstyle.model.ProductModel
+import com.ydh.androiddesignstyle.ui.adapter.ProductAdapter
 import com.ydh.androiddesignstyle.viewmodel.ProductViewModel
+
 
 class FourthActivity : AppCompatActivity() {
 
@@ -21,9 +31,28 @@ class FourthActivity : AppCompatActivity() {
         binding = ActivityFourthBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        title = ""
+        val window: Window = this.window
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+        window.statusBarColor = ContextCompat.getColor(this, R.color.colorPrimaryDark)
+
+        val actionBar: ActionBar? = supportActionBar
+        val colorDrawable = ColorDrawable(Color.parseColor("#FFFFFF"))
+        actionBar!!.elevation = 0F
+        actionBar.setBackgroundDrawable(colorDrawable)
+
+
+
         setViewModel()
         setData()
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.home_menu, menu)
+        return true
     }
 
     private fun setViewModel(){
