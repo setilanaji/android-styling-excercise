@@ -1,5 +1,6 @@
 package com.ydh.androiddesignstyle.ui
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
@@ -65,14 +66,15 @@ class FourthActivity : AppCompatActivity() {
         productViewModel.data.observe({ lifecycle }, {
             val productAdapter = ProductAdapter(this, it as MutableList<ProductModel>,
                 object : ProductAdapter.PostItemListener {
-                    override fun onPostClick(userModel: ProductModel) {
-//                        val intent = Intent(this@FourthActivity, ::class.java)
-//                        intent.putExtra("id", userModel.id)
-//                        intent.putExtra("firstName", userModel.firstName)
-//                        intent.putExtra("lastName", userModel.lastName)
-//                        intent.putExtra("email", userModel.email)
-//                        intent.putExtra("url", userModel.avatarImgUrl)
-//                        startActivity(intent)
+                    override fun onPostClick(productModel: ProductModel) {
+                        val intent = Intent(this@FourthActivity, DetailProductActivity::class.java)
+                        intent.putExtra("id", productModel.id)
+                        intent.putExtra("title", productModel.title)
+                        intent.putExtra("category", productModel.category)
+                        intent.putExtra("description", productModel.description)
+                        intent.putExtra("price", productModel.price)
+                        intent.putExtra("url", productModel.imageUrl)
+                        startActivity(intent)
                     }
 
                 })
