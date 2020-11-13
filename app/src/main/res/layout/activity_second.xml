@@ -79,6 +79,7 @@
                 android:layout_marginEnd="16dp"
                 style="@style/Widget.MaterialComponents.Button.TextButton"
                 android:text="cancel"
+                android:textColor="@color/textColorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/button_login_next"
                 app:layout_constraintTop_toTopOf="parent" />
