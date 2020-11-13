@@ -72,7 +72,7 @@ class FourthActivity : AppCompatActivity() {
                         intent.putExtra("title", productModel.title)
                         intent.putExtra("category", productModel.category)
                         intent.putExtra("description", productModel.description)
-                        intent.putExtra("price", productModel.price)
+                        intent.putExtra("price", productModel.price.toString())
                         intent.putExtra("url", productModel.imageUrl)
                         startActivity(intent)
                     }

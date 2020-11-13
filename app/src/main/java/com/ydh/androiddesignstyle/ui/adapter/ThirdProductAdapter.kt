@@ -23,7 +23,7 @@ class ThirdProductAdapter (private val context: Context, private val items: List
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
         val product = items[position]
         holder.title?.text = product.title
-        holder.price?.text = product.category
+        holder.price?.text = product.price.toString()
         holder.image?.let { Glide.with(context).load(product.imageUrl).override(
             Target.SIZE_ORIGINAL,
             Target.SIZE_ORIGINAL
