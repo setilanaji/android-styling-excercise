@@ -1,9 +1,10 @@
-package com.ydh.androiddesignstyle
+package com.ydh.androiddesignstyle.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.ydh.androiddesignstyle.R
 import com.ydh.androiddesignstyle.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {

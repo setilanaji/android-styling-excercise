@@ -1,4 +1,4 @@
-package com.ydh.androiddesignstyle
+package com.ydh.androiddesignstyle.model
 
 import com.google.gson.annotations.SerializedName
 

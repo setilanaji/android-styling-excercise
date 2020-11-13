@@ -1,13 +1,15 @@
-package com.ydh.androiddesignstyle
+package com.ydh.androiddesignstyle.ui
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.ydh.androiddesignstyle.ui.adapter.ProductAdapter
 import com.ydh.androiddesignstyle.databinding.ActivityFourthBinding
+import com.ydh.androiddesignstyle.model.ProductModel
+import com.ydh.androiddesignstyle.viewmodel.ProductViewModel
 
 class FourthActivity : AppCompatActivity() {
 

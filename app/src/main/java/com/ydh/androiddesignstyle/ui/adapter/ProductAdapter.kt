@@ -1,4 +1,4 @@
-package com.ydh.androiddesignstyle
+package com.ydh.androiddesignstyle.ui.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -9,6 +9,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.target.Target.SIZE_ORIGINAL
+import com.ydh.androiddesignstyle.R
+import com.ydh.androiddesignstyle.model.ProductModel
 
 //import com.squareup.picasso.Picasso
 

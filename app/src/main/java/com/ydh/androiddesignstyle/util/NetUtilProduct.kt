@@ -1,7 +1,8 @@
-package com.ydh.androiddesignstyle
+package com.ydh.androiddesignstyle.util
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
+import com.ydh.androiddesignstyle.service.ProductService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

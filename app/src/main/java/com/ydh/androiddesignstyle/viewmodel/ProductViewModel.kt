@@ -1,9 +1,11 @@
-package com.ydh.androiddesignstyle
+package com.ydh.androiddesignstyle.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.ydh.androiddesignstyle.util.NetUtilProduct
+import com.ydh.androiddesignstyle.model.ProductModel
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
