@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         android:padding="24dp"
-        app:cardBackgroundColor="@color/colorPrimaryDark"
+        app:cardBackgroundColor="@color/colorAccent"
         app:cardCornerRadius="30dp"
         app:contentPadding="32dp"
         app:layout_constraintEnd_toEndOf="parent"
